@@ -1,62 +1,23 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-
-<head profile="http://dublincore.org/documents/dcq-html/">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<!-- favicon -->
-<link href="http://maui.hawaii.edu/library/favicon.ico"  type="image/x-icon" rel="icon" />
-<link href="http://maui.hawaii.edu/library/favicon.ico"  type="image/x-icon" rel="shortcut icon" />
-
-<!-- Dublin Core -->
-<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
-<link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
-<link rel="DCTERMS.replaces" hreflang="en" href="http://dublincore.org/documents/2000/08/15/dcq-html/" />
-<meta name="DCTERMS.issued" scheme="DCTERMS.W3CDTF" content="2003-11-01" />
-<meta name="DC.identifier" scheme="DCTERMS.URI" content="http://dublincore.org/documents/dcq-html/" />
-
-<meta name="DC.title" lang="en" content="Maui Community College Library" />
-<meta name="DC.creator" content="Maui Community College Library" />
-<meta name="DCTERMS.abstract" content="Homepage and navigation portal for the Maui Community College Library" />
-<meta name="DC.format" scheme="DCTERMS.IMT" content="text/html" />
-<meta name="DC.type" scheme="DCTERMS.DCMIType" content="Text" />
-
-<!-- Regular Meta -->
-<meta name="author" content="Maui Community College" />
-<meta name="keywords" content="Maui College Community Library Books Research" />
-<meta name="Description" content="Homepage and navigation portal for the Maui Community College Library" />
+﻿<!DOCTYPE html>
+<html lang="en-US"><head>
+<meta charset="utf-8" />
 <title>Maui CC Library</title>
-
-<!-- CSS/RSS -->
-<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" media="all" />
 <link rel="alternate" type="application/rss+xml" title="Library News" href="http://feeds.feedburner.com/MccLibrary" />
-<!-- Scripts -->
-</head>
-
-<body>
+</head><body>
 <div id="wrapper">
+	<header>
+		<h1><a href="/mcc"><img src="images/header.gif" alt="Maui Community College Library" /></a></h1>
+	</header>
 
-<div id="header">
-<img src="images/header.gif" alt="Maui Community College Library" />
-</div><!-- /header -->
-
-<div id="catalog">
-<form action="http://mauicc.lib.hawaii.edu/cgi-bin/Pwebrecon.cgi?db=local&amp;PAGE=bbSearch" method="get">
-	<fieldset>
-	<legend accesskey="S" style="display:none;">Catalog Search</legend>
-	<!-- Hidden Fields -->
-	<input name="DB" value="local" type="hidden" />
-    	<input value="all of these" name="BOOL1" type="hidden" />
-    	<input name="FLD1" value="Keyword Anywhere (Gkey)" type="hidden" />
-	<input name="CNT" value="25" type="hidden" />
-	<input name="HIST" value="1" type="hidden" />
-	<input name="LOCA" value="Maui CC: All Collections|9" type="hidden" />
-	<!-- User Fields -->
-	<label for="catText" style="display:none;">Search Term</label>
-	<input id="catText" name="SAB1" maxlength="100" type="text" />&nbsp;
-	<input id="catSubmit" type="submit" name="submit" value="Catalog Quick Search"/>
-	</fieldset>
-</form>
-</div><!-- /catalog -->
+	<aside id="catalog">
+	<form action="http://mauicc.lib.hawaii.edu/cgi-bin/Pwebrecon.cgi?db=local&amp;PAGE=bbSearch" method="get"><fieldset>
+		<legend accesskey="S" style="display:none;">Catalog Search</legend>
+		<input name="DB" value="local" type="hidden" /><input value="all of these" name="BOOL1" type="hidden" /><input name="FLD1" value="Keyword Anywhere (Gkey)" type="hidden" /><input name="CNT" value="25" type="hidden" /><input name="HIST" value="1" type="hidden" /><input name="LOCA" value="Maui CC: All Collections|9" type="hidden" />
+		<label for="catText" class="hide">Search Term</label><input id="catText" name="SAB1" maxlength="100" type="text" /> 
+		<input id="submit" type="submit" name="submit" value="Search Catalog"/>
+	</fieldset></form>
+	</aside>
 
 <div id="content">
 <div id="sidebar">
@@ -156,6 +117,4 @@ Monday—Thursday 8 AM to 8 PM | Friday &amp; Saturday 8 AM to 4:30 PM
 </div><!-- /footer -->
 
 </div><!-- /wrapper -->
-</body>
-
-</html>
+</body></html>
