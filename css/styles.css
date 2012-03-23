@@ -1,195 +1,35 @@
-﻿/* 'Maui' stylesheet == Created by Brad Czerniak. Released into the public domain on 1/30/2008 */
+﻿body{background:#fff;color:#111;font-family:sans-serif;}
+a:link{color:#06c;text-decoration:none;}
+	a:visited{}
+	a:hover{color: #060;text-decoration:underline;}
+	a:active{}
+form{display:inline;}
+fieldset{border:0;}
+h1{color:#77bcdd;font-weight:bold;letter-spacing:-2px;}
+h2{background-color:#ccc;border:2px solid #444;display:inline;font-size:2em;padding:5px;}
+h3{font-size:1.3em;font-weight:bold;letter-spacing:-1px;margin-bottom:0px;text-decoration:none;word-spacing:5px;}
+	h3:hover{text-decoration:underline;}
+h4{}
+ul{margin-top:0px;}
+	ul > li{color:#036;list-style-type:disc;}
 
-/* Main elements and wrappers */
+#wrapper{margin:0 auto;padding:3px;width:95%;}
+	header{background:url(../images/librarieslogo.gif) top left no-repeat;height:105px;text-align:center;}
+	#catalog{background-color:#fcf7e3;border-bottom:1px solid #CCFFFF;margin:0 auto;min-width:310px;padding:7px 20px;text-align:center;}
+		#catText{border:2px solid #7B9D18;color:#666;font-size:20px;height:25px;width:300px;}
+		#catSubmit{background-color:#7B9D18;border:2px solid #384E0E;color:#fff;font-size:1.2em;vertical-align:bottom;}
+	#sidebar{border:1px solid #cff;float:left;padding:5px;}
+	#mainpane{float:left;padding:10px 5px 20px 170px;}
+	#footer{border-top:1px solid #CCFFFF;clear:both;}
+		#featured{background:url(../images/autoBanner.gif) top center no-repeat;height:94px;text-align:center;}
+		#footContent{background:#369 url(http://maui.hawaii.edu/library/files/logoSm.gif) center left no-repeat;border-top:4px solid #66CC00;border-bottom:4px solid #66CC00;color:#ffffff;font-size:0.7em;font-weight:bold;margin-top:7px;min-height:90px;text-align:center;}
 
-body {
-	font-family:sans-serif;
-	color:#003366;
-	background-color:#FFFFFF;
-	}
-
-form {
-	display:inline;
-}
-fieldset{
-	border:0;
-}
-#wrapper {
-	padding: 3px;
-	margin:0 auto;
-	width: 95%;
-	}
-
-/* Headings */
-h1{
-	font-weight:bold;
-	color:#77BCDD;
-	letter-spacing:-2px;
-}
-h2{
-	font-size:2em;
-	font-weight:bold;
-	display:inline;
-	background-color:#CCCCCC;
-	padding:5px;
-	border:2px solid #444444;
-	}
-h3{
-	font-size:1.3em;
-	font-weight:bold;
-	text-decoration:none;
-	letter-spacing:-1px;
-	word-spacing:5px;
-	margin-bottom:0px;
-}
-h3:hover{
-	text-decoration:underline;
-}
-h4{
-	font-size:1em;
-	font-weight:bold;
-	display:inline;
-	}
-
-/* Hyperlinks */
-a {
-	text-decoration: none;
-	color:#0066CC;
-	}
-a:visited {
-	}
-a:active {
-	}
-a:hover {
-	text-decoration: underline;
-	color: #006600;
-	}
-
-/* Lists */
-ul{
-	margin-top:0px;
-}
-ul li{
-	color:#003366;
-	list-style-type:disc;
-}
-
-/* id elements */
-#header{
-	padding-top:30px;
-	height:135px;
-	text-align:center;
-	background:url('../images/librarieslogo.gif') top left no-repeat;
-}
-html>body #header {
-	height:105px;
-	}
-
-#catalog{
-	margin:0 auto;
-	padding:7px 20px 7px 20px;
-	background-color:#FCF7E3;
-	text-align:center;
-	min-width:310px;
-	border-bottom:1px solid #CCFFFF;
-}
-#catText{
-	border:2px solid #7B9D18;
-	width:300px;
-	height:25px;
-	font-size:20px;
-	color:#666;
-}
-#catSubmit{
-	vertical-align:bottom;
-	background-color:#7B9D18;
-	border:2px solid #384E0E;
-	color:#fff;
-	font-size:1.2em;
-}
-
-#sidebar{
-	position:relative;
-	float:left;
-	padding:5px;
-	border-right: 1px solid #CCFFFF;
-	border-left: 1px solid #CCFFFF;
-	border-bottom: 1px solid #CCFFFF;
-	}
-#mainpane {
-	float:left;
-	padding:10px 5px 20px 170px;
-}
-#footer{
-	border-top:1px solid #CCFFFF;
-	clear:both;
-}
-#featured{
-	height:94px;
-	background:url('../images/autoBanner.gif') top center no-repeat;
-	text-align:center;
-}
-#footContent{
-	margin-top:7px;
-	background:#336699 url('http://maui.hawaii.edu/library/files/logoSm.gif') center left no-repeat;
-	border-top:4px solid #66CC00;
-	border-bottom:4px solid #66CC00;
-	text-align:center;
-	min-height:90px;
-	color:#ffffff;
-	font-size:0.7em;
-	font-weight:bold;
-}
-
-/* Classes */
-.oo99CC{
-	color:#0099CC;
-}
-.oo9966{
-	color:#009966;
-}
-.CC6633{
-	color:#CC6633;
-}
-.ED0A70{
-	color:#ED0A70;
-}
-.FF9900{
-	color:#FF9900;
-}
-.oo99CC:hover{
-	color:#0099CC;
-}
-.oo9966:hover{
-	color:#009966;
-}
-.CC6633:hover{
-	color:#CC6633;
-}
-.ED0A70:hover{
-	color:#ED0A70;
-}
-.FF9900:hover{
-	color:#FF9900;
-}
-
-.sub{
-	margin-left:30px;
-}
-.sideHighlight{
-	background:url('../images/striped.gif') top left;
-	padding:5px;
-}
-.bigDeal{
-	margin-top:15px;
-	margin-left:-130px;
-	border:2px solid #ED0A70;
-	background: #EFDAE3 url('../images/bigdeal.gif') top left no-repeat;
-	color:#000;
-	min-height:45px;
-	padding:7px 5px 5px 50px;
-	max-width:600px;
-}
-.email{
-	color:#ffffff;
-}
+.0099CC{color:#0099CC;}
+.009966{color:#009966;}
+.CC6633{color:#CC6633;}
+.ED0A70{color:#ED0A70;}
+.FF9900{color:#FF9900;}
+.sub{margin-left:30px;}
+.sideHighlight{background:url(../images/striped.gif) top left;padding:5px;}
+.bigDeal{background: #EFDAE3 url(../images/bigdeal.gif) top left no-repeat;border:2px solid #ED0A70;color:#000;margin:15px 0 0 -130px;max-width:600px;min-height:45px;padding:7px 5px 5px 50px;}
+.email{color:#fff;}
